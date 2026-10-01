@@ -1,0 +1,16 @@
+{
+  "alert_url": "https://bp.schoolbuscity.com/Alerts",
+  "state_file": "state.json",
+  "school_calendar_file": "school_calendar.json",
+  "page_timeout_ms": 30000,
+  "headless": true,
+  "mail": {
+    "msmtp_path": "msmtp",
+    "msmtp_account": "myaccount",
+    "from_address": "School Bus Alerts <you@example.com>"
+  },
+  "routes": {
+    "3039": ["parent1@example.com", "parent2@example.com"],
+    "7014": ["parent1@example.com"]
+  }
+}

@@ -207,7 +207,10 @@ def main():
         log.warning("No routes configured in %s; nothing to do.", config_path)
         return
 
-    url = config.get("alert_url", "https://bp.schoolbuscity.com/Alerts")
+    url = config.get("alert_url")
+    if not url:
+        log.error("'alert_url' is not set in %s", config_path)
+        sys.exit(1)
     timeout_ms = config.get("page_timeout_ms", 30000)
     headless = config.get("headless", True)
 
