@@ -2,6 +2,7 @@
 """Check bp.schoolbuscity.com/Alerts for configured bus routes and email subscribers on new alerts."""
 
 import argparse
+import email.utils
 import hashlib
 import json
 import logging
@@ -113,6 +114,8 @@ def send_email(mail_cfg: dict, to_addrs: list, subject: str, body: str):
     msg["From"] = mail_cfg["from_address"]
     msg["To"] = ", ".join(to_addrs)
     msg["Subject"] = subject
+    msg["Date"] = email.utils.formatdate(localtime=True)
+    msg["Message-ID"] = email.utils.make_msgid()
     msg.set_content(body)
 
     msmtp_path = mail_cfg.get("msmtp_path", "msmtp")
