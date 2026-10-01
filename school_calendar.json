@@ -1,0 +1,24 @@
+{
+  "_source": "2026-2027-All-Elem-Reg-SS-Calendar.pdf (YRDSB Elementary and Regular Start Secondary)",
+  "first_day": "2026-09-08",
+  "last_day": "2027-06-29",
+  "holidays": [
+    {"start": "2026-09-07", "end": "2026-09-07", "name": "Labour Day"},
+    {"start": "2026-10-12", "end": "2026-10-12", "name": "Thanksgiving Day"},
+    {"start": "2026-12-21", "end": "2027-01-01", "name": "Winter Break"},
+    {"start": "2027-02-15", "end": "2027-02-15", "name": "Family Day"},
+    {"start": "2027-03-15", "end": "2027-03-19", "name": "Mid-Winter Break"},
+    {"start": "2027-03-26", "end": "2027-03-26", "name": "Good Friday"},
+    {"start": "2027-03-29", "end": "2027-03-29", "name": "Easter Monday"},
+    {"start": "2027-05-24", "end": "2027-05-24", "name": "Victoria Day"}
+  ],
+  "pa_days_elementary": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-10-26",
+    "2026-11-20",
+    "2027-01-15",
+    "2027-06-04",
+    "2027-06-30"
+  ]
+}
